@@ -20,6 +20,7 @@ If your system complains about a failed upgrade, package manager conflicts, brok
 
 ```
 sudo apt clean
+sudo rm -vf /var/lib/apt/lists/*
 sudo apt update -m
 sudo dpkg --configure -a
 sudo apt install -f
